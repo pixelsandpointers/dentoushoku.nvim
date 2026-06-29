@@ -208,12 +208,24 @@ function M.setup(opts)
   hl("@function.call",       { fg = p.mizu })
   hl("@method",              { fg = p.mizu })
   hl("@method.call",         { fg = p.mizu })
+  hl("@function.method",     { fg = p.mizu })
+  hl("@function.method.call", { fg = p.mizu })
   hl("@constructor",         { fg = p.yamabuki_br })
 
-  hl("@keyword",             { fg = p.enji_br, bold = true })
-  hl("@keyword.function",    { fg = p.enji_br })
-  hl("@keyword.return",      { fg = p.enji_br, bold = true })
-  hl("@keyword.operator",    { fg = p.fuji_br })
+  hl("@keyword",                       { fg = p.enji_br, bold = true })
+  hl("@keyword.function",              { fg = p.enji_br })
+  hl("@keyword.return",                { fg = p.enji_br, bold = true })
+  hl("@keyword.operator",              { fg = p.fuji_br })
+  hl("@keyword.modifier",              { fg = p.enji_br })           -- const, virtual, override, public/private/protected, static, extern
+  hl("@keyword.type",                  { fg = p.yamabuki_br, italic = true }) -- class, namespace, template, typename, void, int, etc.
+  hl("@keyword.coroutine",             { fg = p.enji_br, bold = true })  -- co_await, co_yield, co_return
+  hl("@keyword.exception",             { fg = p.enji_br, bold = true })  -- try, catch, throw, noexcept
+  hl("@keyword.repeat",                { fg = p.enji_br })           -- for, while, do
+  hl("@keyword.conditional",           { fg = p.enji_br })           -- if, else, switch, case
+  hl("@keyword.conditional.ternary",   { fg = p.fuji_br })           -- ? :
+  hl("@keyword.import",                { fg = p.fuji_br })           -- #include
+  hl("@keyword.directive",             { fg = p.fuji_br })           -- #if, #ifdef, #endif, etc.
+  hl("@keyword.directive.define",      { fg = p.fuji_br })           -- #define
   hl("@conditional",         { fg = p.enji_br })
   hl("@repeat",              { fg = p.enji_br })
   hl("@exception",           { fg = p.enji_br, bold = true })
@@ -228,6 +240,7 @@ function M.setup(opts)
   hl("@attribute",           { fg = p.fuji_br })
   hl("@property",            { fg = p.fuji_br })
   hl("@namespace",           { fg = p.yamabuki_br })
+  hl("@module",              { fg = p.yamabuki_br })
 
   hl("@comment",             { fg = p.fg_muted, italic = true })
   hl("@comment.todo",        { fg = p.bg, bg = p.yamabuki_br, bold = true })
