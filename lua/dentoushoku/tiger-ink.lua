@@ -232,6 +232,8 @@ function M.setup(opts)
 
   hl("@type",                { fg = p.cyan_br })
   hl("@type.builtin",        { fg = p.cyan_br, italic = true })
+  hl("@type.qualifier",      { fg = p.cyan_br, italic = true })
+  hl("@keyword.storage",     { fg = p.gold })
   hl("@attribute",           { fg = p.blue_br })
   hl("@property",            { fg = p.blue_br })
   hl("@namespace",           { fg = p.cyan_br })

@@ -230,6 +230,8 @@ function M.setup(opts)
 
   hl("@type",                { fg = p.gold_br })
   hl("@type.builtin",        { fg = p.gold_br, italic = true })
+  hl("@type.qualifier",      { fg = p.gold_br, italic = true })
+  hl("@keyword.storage",     { fg = p.oxblood_br })
   hl("@attribute",           { fg = p.lavender_br })
   hl("@property",            { fg = p.lavender_br })
   hl("@namespace",           { fg = p.gold_br })
